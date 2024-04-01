@@ -30,7 +30,18 @@ nav a{
     text-decoration: none;
     color:white;
     font-size: larger;
+    padding: 10px 1.5px;
 }
+nav a:hover{
+    background-color: #fba152;
+    
+} 
+nav a:active{
+    color: #9f9b9b;
+   
+}
+
+
 @media screen and (max-width:850px) {
  
     nav ul {
