@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="footer.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<style>
+    
+    body{
+        font-family: Arial, Helvetica, sans-serif; 
+        background-color: #f1f1f1;
+    }
+
+    #first{
+        background-image: url(check92.jpeg);
+        background-size: 100%;
+        height: 700px;
+        background-repeat: no-repeat;
+        margin-bottom: 100px;
+    }
+    #first div{
+        padding-top: 250px;
+        text-align: center;
+        margin-right: 7%;
+    }
+    #first h1{
+       
+        color:white;
+        text-align: center;
+        font-size: 40px;
+        color:#673404;
+    }
+    #first p{
+        margin-left: 29%;
+        color: black;
+        font-size: larger;
+    }
+    button{
+        background-color: #ff9836;
+        color: white;
+        padding: 12px 40px;
+        font-size: 18px;
+        margin-left: 40%;
+    }
+    .styles{
+        display: grid; grid-template-columns: repeat(2,1fr);
+    }
+    .styles img {
+        width:300px; height:300px ; border-radius: 100%; margin-top: 40px; 
+       
+
+    }
+    .par2{
+        font-size: large; margin-top: 90px; margin-left:2;
+    }
+    #chef #h2{
+            font-size: 40px; font-style: italic; text-align: center; color:#ff9638; 
+            margin-top: 100px;
+        }
+    #grid{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            padding: 40px 8%;
+            background-color: #ffc175;
+            grid-column-gap:10px;
+            
+          
+        }
+        .relative {
+          
+            margin-bottom: 20px;
+            
+            transition: transform 0.2s ease; 
+           
+        }
+ 
+        #grid img{
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+
+            
+        }
+        #grid a{
+            text-decoration: none;
+            color: black;
+           
+        }
+        .relative:hover {
+             transform: translateY(-8px);
+        }
+        .recipe{
+            margin: 1px 6%;
+            padding-bottom: 20px;
+
+        }
+        .recipe h3{
+            color: #ff9638;
+            line-height: 0;
+        }
+        .recipe h2{
+            line-height: 1;
+            color: #ff9638;
+        }
+        .recipe p{
+            line-height: 1.1em;
+        }
+        @media screen and (max-width:1150px){
+          #grid img{
+            width: 165px;
+            height: 165px;
+          }
+        }
+    @media screen and (max-width:960px) {
+        #first{background-size: cover;  
+         }
+       #grid{
+        grid-template-columns: repeat(3,1fr);
+       }
+       
+    }
+    @media screen and (max-width:850px) {
+ 
+        
+        .styles img{
+            margin-right: 1% !important;
+            width: 280px ;
+            height: 280px;
+            margin-left: 1% !important;
+        }
+        #paragraph{margin-bottom: 100px !important;}
+        .styles button{
+            margin-bottom: 30px;
+        }
+}
+
+@media screen and (max-width:680px){
+  
+        .styles img{
+           height: 220px;
+           width: 220px;
+        }
+        .styles button{
+            padding: 12px 27px;
+        }
+        
+        #paragraph{margin-bottom: 150px !important;}
+        .par2{
+            margin-top: 30px;
+        }
+        
+}
+@media screen and (max-width:600px){
+#grid{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+@media screen and (max-width:480px){
+
+   
+ .styles img{
+           height: 200px;
+           width: 200px;
+        }
+        .styles button{
+            padding: 12px 20px;
+        }
+        .par2{
+            margin-top: 10px;
+        }
+        #paragraph{
+        margin-bottom: 200px!important;
+    }
+}
+@media screen and (max-width:453px) {
+   .styles button{
+    padding: 12px 10px;
+   }
+   .par2{
+    margin-top: 0px;
+   }
+   
+}
+
+</style>
+<script>
+    function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        var menuIcon = document.querySelector('.menu-icon');
+
+        menu.classList.toggle('active');
+        menuIcon.classList.toggle('active');
+    }
+</script>
+<body>
+    <nav>
+        <div id="logo">
+            <img src="logo1.png" alt="">
+        </div>
+        <div id="navli">
+            <div class="menu-icon" onclick="toggleMenu()"></div>
+            <ul class="menu">
+                <li><a class="one" href="index.html">Home</a></li>
+                <li><a class="one"  href="about.html">About</a></li>
+                <li><a class="one" href="recipe.html">Recipe</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul></div></nav>
+        <main>
+            <section id="first">
+                <div>
+                <img style="background-color: #ff9836; border-radius: 100%; " src="logo1.png" alt="">
+                <h1>PERUVIAN FOOD RECIPE</h1>
+                <p>By Chef.Rozina</p>
+            </div>
+            </section>
+            <div>
+
+
+            <div id="paragraph" style="margin-left: 10%; margin-right: 10%; margin-top: 0; height:100px; font-size: 30px; color:#fa9c2a ; background-color:;">
+                <p style="text-align: center; margin-bottom: 10px; ">"Peruvian cuisine is a vibrant symphony of flavors, a delightful dance of tradition and innovation that leaves a 
+                lasting impression on every palate."
+
+            </p></div><div>
+                <h1 style=" font-size: 40px; font-style: italic; text-align: center; color:#ff9638; margin-top: 50px;">Most popular Dishes</h1>
+    <div class="styles">
+    <div style="position: relative; margin-right: 5%; background-color: #ffc175; height: 350px;   border-radius: 0 30% 0 0;">
+        <img style="position: absolute;  right: 0;  margin-right: 20%;" src="recipes/Causa/images/causa.jpg" alt="">
+    </div>
+    <div class="par2"  >
+        <h2 style="color: #ff9638;">name of that</h2>
+        <p style="color: #525252;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptas sunt quidem atque assumenda obcaecati
+         repudiandae, nobis, architecto mollitia quos aliquid omnis ut iure ea delectus doloribus earum accusamus illo.</p>
+         <button>read more</button>
+    </div>
+    </div>
+    <div class="styles">
+       
+        <div class="par2">
+            <h2 style="color: #ff9638;">name of that</h2>
+            <p style="color:#525252;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptas sunt quidem atque assumenda obcaecati
+             repudiandae, nobis, architecto mollitia quos aliquid omnis ut iure ea delectus doloribus earum accusamus illo.</p>
+                <a href="recipes/Anticuchos de Corazón/Anticuchos_de_Corazón.html"><button>Read More</button></a>
+        </div>
+        <div style="background-color: #ffc175;  height: 350px;  margin-left: 5%;  border-radius: 30% 0 0 0; ">
+            <img style="  margin-left: 20%;" src="recipes/Anticuchos de Corazón/images/IMG1.jpg" alt="">
+        </div>
+
+</div></div>
+            </div>
+            <div id="chef"><h2 id="h2" style="text-align: center;">Other chef recipes</h2>
+            <div id="grid">
+                <div  class="relative">
+                    
+                    <a href="recipes/Lomo Saltado/Lomo_Saltado.html"><img  src="recipes/Lomo Saltado/images/IMGa.jpg" alt="">
+                        <div class="recipe">
+                            
+                        <h2>sthelse </h2>
+                       
+        
+                        </div>
+                        </a>
+                        </div>
+            <div  class="relative">
+                
+                <a href="recipes/Anticuchos de Corazón/Anticuchos_de_Corazón.html"><img  src="recipes/Anticuchos de Corazón/images/IMG1.jpg" alt="">
+                    <div class="recipe">
+                        
+                    <h2>Indian </h2>
+                    
+                
+                    </div>
+                    </a>
+                    </div>
+                    <div  class="relative">
+                        
+                        <a href="recipes/Causa/Causa.html"><img  src="recipes/Causa/images/causa.jpg" alt="">
+                            <div class="recipe">
+                                
+                            <h2>Ethiopian </h2>
+                            
+                     
+                              </div>
+                        </a>
+                </div>
+                <div  class="relative">
+                        
+                    <a href="recipes/Causa/Causa.html"><img  src="recipes/Causa/images/causa.jpg" alt="">
+                        <div class="recipe">
+                            
+                        <h2>Italian </h2>
+                        
+                 
+                          </div>
+                    </a>
+            </div>
+                <div  class="relative">
+                   
+                    <a href="recipes/Ratatouille/Ratatouille.html"><img  src="recipes/Ratatouille/Images/pexels-codrin-alex-7439978 2.jpg" alt="">
+                        <div class="recipe">
+                            
+                        <h2>Mexican </h2>
+                        
+                   
+                          </div>
+                    </a>
+            </div>
+           
+            </div></div>
+        </main> 
+        <footer>
+            <div id="footer_group">
+                <div>
+                    <h2>Subscribe</h2>
+                    <p>Register for online cooking lessons with a exprianced and great chefs before it gets late </p>
+                        <button>Register</button>
+                </div>
+                <div>
+                    <h2>Explore</h2>
+                    <ul>
+                        <li><a href="">Browse All Recipe</a></li>
+                        <li><a href="">Latest Recipe</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div style="border: none;">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li> <i  class="fas fa-map-marker-alt"></i> 454 Haileslase avenue Street, Nairobi,Kenya</li>
+   
+                        <li> <i class="fas fa-envelope"></i> <a href="mailto:123@gmail.com">recipe@gmail.com</a></li>
+                        <li><i class="fas fa-phone"></i> +254 8345 6678</li>          </ul>         
+                    
+                </div>
+            </div>
+            <div id="copyright">&copy;copyright 20244 Reserved</div>
+        </footer>
+        
+        <script>
+            window.embeddedChatbotConfig = {
+            chatbotId: "3L22uUnkvCqlKqVqAAlcu",
+            domain: "www.chatbase.co"
+            }
+            </script>
+            <script
+            src="https://www.chatbase.co/embed.min.js"
+            chatbotId="3L22uUnkvCqlKqVqAAlcu"
+            domain="www.chatbase.co"
+            defer>
+            </script>
+         </body>
+</html>
