@@ -171,10 +171,11 @@ grid-row-gap: 40px;
         font-size: 25px;
     }
     #image{
-        width:90%;
+        width:95%;
+        margin-left: 2%;
     }
  #image img {
-    margin-left: 0%;
+    margin-left: 1%;
     margin-right: 1%;
     height: 400px;
     width: 100%;
